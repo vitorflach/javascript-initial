@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color:darkgrey;
+            color: gold;
+            font: normal 25pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome?')
+        var idade = Number.parseInt(window.prompt('Qual a sua idade?'))
+        var email = window.prompt('Qual o seu email?')
+        var telefone = String(window.prompt('Qual o seu telefone?'))
+        var salario = Number.parseFloat(window.prompt('Qual o seu Salario?'))
+
+        document.write(`Nome: ${nome}.<br/>`)
+        document.write(`Idade: ${idade}.<br/>`)
+        document.write(`Email: ${email}.<br/>`)
+        document.write(`Telefone: ${telefone}.<br/>`)
+        document.write(`Salario: ${salario.toLocaleString('pt-BR' , {style: 'currency' , currency:'BRL'})}`)
+    </script>
+</body>
+</html>

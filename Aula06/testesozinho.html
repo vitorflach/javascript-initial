@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        body{
+            background-color:rgb(44, 44, 44);
+            font: normal 30pt/*Tamanho da letra*/ Arial;
+            color:white/*Cor das letras*/           
+        }       
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Digite seu nome')
+        var idade = Number.parseInt(window.prompt('Digite sua idade'))
+        var email = window.prompt('Digite seu email')
+        var telefone = String(window.prompt('Digite seu telefone'))
+        var salario = Number.parseFloat(window.prompt('Digite seu salario'))
+   
+        document.writeln('Formulário cadastrado</br>')
+        document.writeln(`Nome: ${nome}<br/>`)
+        document.writeln(`Idade: ${idade}<br/>`)
+        document.writeln(`Email: ${email}<br/>`)
+        document.writeln(`Telefone: ${telefone}<br/>`)
+        document.writeln(`Salário: ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`)        
+    </script>
+</body>
+</html>
